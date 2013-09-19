@@ -1,4 +1,5 @@
 @import "bootstrap";
+@import url(http://fonts.googleapis.com/css?family=Shojumaru);
 
 /* mixins, variables, etc. */
 
@@ -12,6 +13,7 @@ html {
 
 body {
   padding-top: 60px;
+  background-color: #000;
 }
 
 section {
@@ -69,9 +71,16 @@ p {
   padding-top: 9px;
   font-weight: bold;
   line-height: 1;
+  font-family: 'Shojumaru', cursive;
   &:hover {
-    color: white;
+    color: #1695C2;
     text-decoration: none;
+  }
+}
+
+#project{
+  &:hover {
+    color: #1695c2;
   }
 }
 
@@ -80,8 +89,8 @@ p {
 footer {
   margin-top: 45px;
   padding-top: 5px;
-  border-top: 1px solid $grayMediumLight;
   color: $grayLight;
+  position: absolute;
   a {
     color: $gray;
     &:hover {
@@ -99,4 +108,39 @@ footer {
       margin-left: 10px;
     }
   }
+}
+
+
+#bio {
+  border-radius: 5px;
+  float: left;
+  width: 450px;
+  height: 837px;
+  background-color: #fff;
+  img {
+  padding: 3px;
+  float: left;
+  }
+  p {
+  border-radius: 5px;
+  color: #000;
+  background-color: #fff;
+  }
+}
+
+
+#artwork {
+  border-radius: 5px;
+  float: right;
+  width: 450px;
+  height: 240px;
+  h1{
+  color: #fff;
+  }
+}
+
+/* resize images */
+#artwork img {
+  width: 100%;
+  height: auto;
 }
